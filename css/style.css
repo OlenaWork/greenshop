@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container {
+   max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+   padding:25px 0;
+    border-bottom:1px solid #46A35880;
+}
+
+.logo,
+nav,
+.login{
+    display:inline-block;
+    vertical-align:middle;
+}
+
+nav{
+    width:58%;
+    text-align:center;
+}
+
+nav ul{
+    list-style:none;
+}
+
+nav li{
+    display:inline-block;
+    margin-right:40px;
+}
+
+nav li:last-child{
+    margin-right:0;
+}
+
+nav a{
+    text-decoration:none;
+    color:#3D3D3D;
+    padding-bottom:25px;
+}
+
+nav a.active{
+    color:#3D3D3D;
+    font-weight:700;
+    border-bottom:3px solid #46A358;
+}
+
+
+.hero {
+ background-color: #F5F5F580;
+  margin-top: 12px;
+  padding: 40px;
+
+}
+
+.wrapper,
+.image {
+ display: inline-block;  
+ width: 49%;
+ max-width: 557px;
+}
+
+.wrapper {
+    vertical-align: top;
+    margin-top: 50px;
+}
+
+.main-title {
+font-family: Cera Pro;
+font-weight: 900;
+font-size: 70px;
+leading-trim: NONE;
+line-height: 70px;
+letter-spacing: 0%;
+text-transform: uppercase;
+}
+
+.image {
+   text-align: right;
+}
+
+button{
+    width: 100px;
+    height: 35px;
+    background:#46A358;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.login img{
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.login{
+    vertical-align: middle;
+}
+
+.shop-btn {
+ width:140px;
+    height:40px;
+    font-size:16px;
+    font-weight:700;
+}
+
+.hero-subtitle{
+    font-size:14px;
+    font-weight:500;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#3D3D3D;
+    margin-bottom:8px;
+}
+
+.main-title span{
+    color:#46A358;
+}
+
+
+_______________________________________________Start Login______________________________________________
+
+.form {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form.submit-btn {
+    background-color: #46A358;
+}
+.form label,
+.form input,
+.form button {
+    width: 100%;
+}
+
+.form input {
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    padding: 14px 14px;
+
+    font-family: Cera Pro;
+    font-weight: 400;
+    font-size: 14px;
+    leading-trim:NONE;
+    line-height: 16px;
+    letter-spacing: 0;
+
+}
