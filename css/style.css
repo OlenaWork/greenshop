@@ -122,9 +122,7 @@ button{
 .main-title span{
     color:#46A358;
 }
-
-
-_______________________________________________Start Login______________________________________________
+____________________________________________Start Login______________________________________________
 
 .form {
     max-width: 300px;
@@ -154,4 +152,211 @@ _______________________________________________Start Login______________________
     line-height: 16px;
     letter-spacing: 0;
 
+}
+
+________________________________HW7___________________________________
+
+@font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/CeraPro/CeraPro-Regular.woff") format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/CeraPro/CeraPro-Medium.woff") format("woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/CeraPro/CeraPro-Bold.woff") format("woff");
+    font-weight: 700;
+}
+
+body {
+    font-family: "Cera Pro", sans-serif;
+}
+
+
+.shop {
+    margin-top: 50px;
+    font-size: 0;
+}
+
+.categories {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 230px;
+    min-height: 900px;
+    padding: 14px 18px;
+    background-color: #fbfbfb;
+}
+
+.categories h3 {
+    margin: 0 0 20px;
+    color: #3d3d3d;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.categories ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.categories li {
+    margin-bottom: 18px;
+}
+
+.categories a {
+    color: #3d3d3d;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.sale {
+    margin: 0 -18px ;
+    margin-top: 500px;
+    background-color: #edf7ee;
+    text-align: center;
+}
+
+.sale h2 {
+    margin: 0;
+    color: #46a358;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.sale p {
+    margin: 5px 0 15px;
+    color: #3d3d3d;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sale img {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.products {
+    display: inline-block;
+    vertical-align: top;
+    width: 840px;
+    margin-left: 45px;
+    font-size: 16px;
+}
+
+.products-top {
+    margin-bottom: 30px;
+}
+
+.product-tabs {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.product-tabs a {
+    display: inline-block;
+    margin-right: 30px;
+    padding-bottom: 8px;
+    color: #3d3d3d;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.product-tabs .active-tab {
+    color: #46a358;
+    font-weight: 500;
+    border-bottom: 2px solid #46a358;
+}
+
+.sorting {
+    float: right;
+    font-size: 14px;
+}
+
+.sorting span {
+    font-size: 14px;
+}
+
+.sorting select {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #3d3d3d;
+    font-size: 14px;
+}
+.product-list {
+    font-size: 0;
+}
+
+.product-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 224px;
+    margin-right: 24px;
+    margin-bottom: 45px;
+    font-size: 16px;
+}
+
+.product-card:nth-child(3n) {
+    margin-right: 0;
+}
+
+.product-image {
+    width: 224px;
+    height: 286px;
+    text-align: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.product-card h3 {
+    margin: 10px 0 5px;
+    color: #3d3d3d;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.product-card p {
+    margin: 0;
+    color: #46a358;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.pagination {
+    margin-top: 5px;
+    padding-bottom: 40px;
+    text-align: right;
+}
+
+.pagination a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+    color: #3d3d3d;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.pagination .current {
+    border-radius: 4px;
+    background-color: #46a358;
+    color: white;
 }
