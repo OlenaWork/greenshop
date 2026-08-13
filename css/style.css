@@ -122,39 +122,192 @@ button{
 .main-title span{
     color:#46A358;
 }
-____________________________________________Start Login______________________________________________
-
-.form {
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.form.submit-btn {
-    background-color: #46A358;
-}
-.form label,
-.form input,
-.form button {
-    width: 100%;
-}
-
-.form input {
-    border: 1px solid #eaeaea;
-    border-radius: 5px;
-    margin-bottom: 16px;
-    padding: 14px 14px;
-
-    font-family: Cera Pro;
+/*___________________________________________Start Register______________________________________________*/
+@font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/CeraPro-Regular.woff") format("woff");
     font-weight: 400;
-    font-size: 14px;
-    leading-trim:NONE;
-    line-height: 16px;
-    letter-spacing: 0;
-
+}
+@font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/CeraPro-Medium.woff") format("woff");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/CeraPro-Bold.woff") format("woff");
+    font-weight: 700;
 }
 
-________________________________HW7___________________________________
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Cera Pro", sans-serif;
+    background-color: #ffffff;
+}
+.register-wrapper {
+    width: 500px;
+    min-height: 700px;
+    margin: 50px auto 0;
+    border-bottom: 10px solid #46a358;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+.register-form {
+    position: relative;
+    width: 100%;
+    padding: 45px 100px 40px;
+}
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    border: none;
+    background: none;
+    font-size: 28px;
+    font-weight: 300;
+    color: #46a358;
+    cursor: pointer;
+}
+.tabs {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.tab {
+    color: #3d3d3d;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.tab.active {
+    color: #46a358;
+}
+
+.divider {
+    margin: 0 10px;
+    color: #3d3d3d;
+}
+
+.form-description {
+    margin: 0 0 25px;
+
+    color: #3d3d3d;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.form-input {
+    width: 100%;
+    height: 45px;
+
+    margin-bottom: 15px;
+    padding: 0 15px;
+
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+
+    background-color: #ffffff;
+
+    color: #3d3d3d;
+    font-family: "Cera Pro", sans-serif;
+    font-size: 14px;
+
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: #a5a5a5;
+}
+
+.form-input:focus {
+    border-color: #46a358;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper .form-input {
+    padding-right: 45px;
+}
+
+.eye-btn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+
+    width: 35px;
+    height: 45px;
+
+    border: none;
+    background: transparent;
+
+    color: #727272;
+    cursor: pointer;
+}
+.register-btn {
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #46a358;
+    color: #ffffff;
+    font-family: "Cera Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.social-title {
+    display: flex;
+    align-items: center;
+    margin: 30px 0 15px;
+    color: #727272;
+    font-size: 13px;
+    text-align: center;
+}
+.social-title::before,
+.social-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #eaeaea;
+}
+.social-title span {
+    margin: 0 10px;
+}
+.social-btn {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #727272;
+    font-family: "Cera Pro", sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+.google-icon {
+    position: absolute;
+    left: 75px;
+    color: #4285f4;
+    font-size: 18px;
+    font-weight: 700;
+}
+.facebook-icon {
+    position: absolute;
+    left: 76px;
+    color: #3b5998;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*____________________________________________HW7_______________________________________________________*/
 
 @font-face {
     font-family: "Cera Pro";
@@ -359,4 +512,121 @@ body {
     border-radius: 4px;
     background-color: #46a358;
     color: white;
+}
+
+.container-promo {
+    display: flex;
+    max-width: 1200px;
+    gap: 28px;
+    margin: 60px auto 0;
+}
+.promo-card {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    height: 302px;
+    background-color: #f5f5f5;
+}
+.promo-card img {
+    width: 45%;
+    height: 220px;
+    object-fit: contain;
+}
+.promo-content {
+    flex: 1;
+    text-align: center;
+}
+
+.promo-content h3 {
+    margin-bottom: 15px;
+    color: #3d3d3d;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.promo-content p {
+    margin-bottom: 20px;
+    color: #727272;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.promo-content a {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 4px;
+    background-color: #46a358;
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.container-blog {
+   max-width: 1200px;
+    margin: 70px auto 0
+}
+
+.blog-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.blog-header h2 {
+    margin-bottom: 10px;
+    color: #3d3d3d;
+    font-size: 30px;
+}
+
+.blog-header p {
+    color: #727272;
+    font-size: 14px;
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;  
+}
+
+.blog-card {
+    flex: 1;
+    min-width: 0;
+}
+
+.blog-card > img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.blog-info {
+    padding-top: 10px;
+}
+
+.blog-date {
+    margin-bottom: 7px;
+    color: #46a358;
+    font-size: 11px;
+}
+
+.blog-card h3 {
+    margin-bottom: 8px;
+    color: #3d3d3d;
+    font-size: 17px;
+    line-height: 1.3;
+}
+
+.blog-card p:not(.blog-date) {
+    margin-bottom: 10px;
+    color: #727272;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.blog-card a {
+    color: #3d3d3d;
+    font-size: 12px;
+    text-decoration: none;
 }
