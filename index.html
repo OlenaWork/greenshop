@@ -9,7 +9,7 @@
 
 <body>
     <header class="header container">
-        <img src="./image/Logo.png" alt="Greenshop Logo">
+        <img src="./image/Logo.svg" alt="Greenshop Logo">
         <nav>
           <ul>
               <li><a class="active" href="#">Home</a></li>
@@ -38,9 +38,21 @@
              <li><a href="#">Blogs</a></li>
          </ul>
      </nav>
-        <button class="login">
-            <img src="./image/Logout SVG.svg" alt="logo">Login
-        </button>
+     <div class="header-actions">
+              <button class="header-icon">
+                  <img src="./image/search.svg" alt="Search">
+               </button>
+
+              <button class="header-icon">
+                   <img src="./image/shopping 1.svg" alt="Shopping cart">
+             </button>
+             
+             <button class="login">
+                 <a href="./registration.html" class="login"><img src="./image/Logout SVG.svg" alt="Logout">Login</a>
+                
+            </button>
+     </div>
+        
 
     </header>
 
@@ -50,7 +62,7 @@
                 Welcome to GreenShop
             </p>
             <h1 class="main-title">
-                Let`s Make a <br> 
+                Let's Make a <br> 
                 Better <span>Planet</span>
             </h1>
           <p class="some">
@@ -68,25 +80,100 @@
     
     <section class="shop container">
       <aside class="categories">
-          <h3>Categories</h3>
+          <h3>Categories</h3> 
+         <ul>
+              <li>
+                 <a href="#">House Plants</a>
+                 <span>(33)</span>
+              </li>
+              <li>
+                 <a href="#">Potter Plants</a>
+                 <span>(12)</span>
+              </li>
+              <li>
+                <a href="#">Seeds</a>
+                <span>(65)</span>
+              </li>
+              <li>
+                 <a href="#">Small Plants</a>
+                 <span>(39)</span>
+              </li>
+              <li>
+                  <a href="#">Big Plants</a>
+                  <span>(23)</span>
+              </li>
+              <li>
+                  <a href="#">Succulents</a>
+                  <span>(17)</span>
+              </li>
+              <li>
+                  <a href="#">Terrariums</a>
+                   <span>(19)</span>
+              </li>
+              <li>
+                  <a href="#">Gardening</a>
+                  <span>(13)</span>
+              </li>
+              <li>
+                  <a href="#">Accessories</a>
+                  <span>(18)</span>
+              </li>
+         </ul>
+
+          <div class="price-range">
+               <h3>Price Range</h3>
+
+             <div class="range-slider">
+                    <input
+                     type="range"
+                     class="range-min"
+                     min="39"
+                     max="1230"
+                     value="39"
+                     >
+
+                    <input
+                    type="range"
+                    class="range-max"
+                    min="39"
+                    max="1230"
+                    value="1230"
+                    >
+             </div>
+               <p> Price:<span class="price-value">$39 - $1230</span></p>
+
+               <button class="button-range" type="button">Filter</button>
+          </div>
+
+
+          <div class="size">
+            <h3>Size</h3>
           <ul>
-             <li><a href="#">House Plants</a></li>
-             <li><a href="#">Potter Plants</a></li>
-             <li><a href="#">Seeds</a></li>
-             <li><a href="#">Small Plants</a></li>
-             <li><a href="#">Big Plants</a></li>
-             <li><a href="#">Succulents</a></li>
-             <li><a href="#">Terrariums</a></li>
-             <li><a href="#">Gardening</a></li>
-             <li><a href="#">Accessories</a></li>
-          </ul>
+              <li>
+                 <a href="#">Small</a>
+                  <span>(119)</span>
+             </li>
+
+             <li>
+                 <a href="#">Medium</a>
+                 <span>(86)</span>
+             </li>
+
+             <li>
+                 <a href="#">Large</a>
+                 <span>(78)</span>
+             </li>
+         </ul>
+          </div>
+
          <div class="sale">
-             <img src="./image/Super SaleText.png" alt="SaleText">
+            <img src="./image/Super SaleText.png" alt="SaleText">
              <p>UP TO 75% OFF</p>
             
              <img src="./image/SUPERSALE.png" alt="Sale">
          </div>
-       </aside>
+     </aside>
+
 
        <div class="products">
           <div class="products-top">
@@ -106,12 +193,12 @@
                 <div class="product-card">
 
                   <div class="product-image">
-                       <img src="./image/Barberton Daisy.png" alt="Barberton Daisy"> 
+                       <img src="./image/Barberton_Daisy-removebg-preview.png" alt="Barberton Daisy"> 
                       
 
                        <div class="product-actions">
                           <button type="button">
-                             <img src="./image/shopping-cart.svg" alt="shopping-cart">
+                             <img src="./image/shopping 1.svg" alt="shopping-cart">
                           </button>
 
                           <button type="button">
@@ -132,12 +219,12 @@
 
                <div class="product-card">
                   <div class="product-image">
-                     <img src="./image/Angel Wing Begonia.png" alt="Angel Wing Begonia">
+                     <img src="./image/Angel_Wing_Begonia-removebg-preview.png" alt="Angel Wing Begonia">
 
                       
                      <div class="product-actions">
                           <button type="button">
-                             <img src="./image/shopping-cart.svg" alt="shopping-cart">
+                             <img src="./image/shopping 1.svg" alt="shopping-cart">
                           </button>
 
                           <button type="button">
@@ -157,14 +244,14 @@
 
                <div class="product-card">
                   <div class="product-image">
-                     <img src="./image/African Violet.png" alt="African Violet">
+                     <img src="./image/African_Violet-removebg-preview.png" alt="African Violet">
                      
                      <span class="discount">13% OFF</span>
                      
                       
                      <div class="product-actions">
                           <button type="button">
-                             <img src="./image/shopping-cart.svg" alt="shopping-cart">
+                             <img src="./image/shopping 1.svg" alt="shopping-cart">
                           </button>
 
                           <button type="button">
@@ -179,8 +266,9 @@
                  
                     </div>
                  <h3>African Violet</h3>
-                 <span class="old-price">$229.00</span>
                  <span class="price">$199.00</span>
+                 <span class="old-price">$229.00</span>
+                 
               </div>
 
 
@@ -191,7 +279,7 @@
                       
                      <div class="product-actions">
                           <button type="button">
-                             <img src="./image/shopping-cart.svg" alt="shopping-cart">
+                             <img src="./image/shopping 1.svg" alt="shopping-cart">
                           </button>
 
                           <button type="button">
@@ -211,12 +299,12 @@
 
                <div class="product-card">
                    <div class="product-image">
-                     <img src="./image/Blushing Bromeliad.png" alt="Blushing Bromeliad">
+                     <img src="./image/Blushing_Bromeliad-removebg-preview.png" alt="Blushing Bromeliad">
                      
                       
                      <div class="product-actions">
                           <button type="button">
-                             <img src="./image/shopping-cart.svg" alt="shopping-cart">
+                             <img src="./image/shopping 1.svg" alt="shopping-cart">
                           </button>
 
                           <button type="button">
@@ -236,12 +324,12 @@
 
                <div class="product-card">
                    <div class="product-image">
-                     <img src="./image/Aluminum Plant.png" alt="Aloimium Plant">
+                     <img src="./image/Aluminum_Plant-removebg-preview.png" alt="Aloimium Plant">
                      
                       
                      <div class="product-actions">
                           <button type="button">
-                             <img src="./image/shopping-cart.svg" alt="shopping-cart">
+                             <img src="./image/shopping 1.svg" alt="shopping-cart">
                           </button>
 
                           <button type="button">
@@ -261,12 +349,12 @@
 
                <div class="product-card">
                  <div class="product-image">
-                     <img src="./image/Bird's Nest Fern.png" alt="Bird's Nest Fern">
+                     <img src="./image/Bird_s_Nest_Fern-removebg-preview.png" alt="Bird's Nest Fern">
                      
                       
                      <div class="product-actions">
                           <button type="button">
-                             <img src="./image/shopping-cart.svg" alt="shopping-cart">
+                             <img src="./image/shopping 1.svg" alt="shopping-cart">
                           </button>
 
                           <button type="button">
@@ -286,12 +374,12 @@
 
                <div class="product-card">
                  <div class="product-image">
-                     <img src="./image/Broadleaf Lady Palm.png" alt="Broadleaf Lady Palm">
+                     <img src="./image/Broadleaf_Lady_Palm-removebg-preview.png" alt="Broadleaf Lady Palm">
                      
                       
                      <div class="product-actions">
                           <button type="button">
-                             <img src="./image/shopping-cart.svg" alt="shopping-cart">
+                             <img src="./image/shopping 1.svg" alt="shopping-cart">
                           </button>
 
                           <button type="button">
@@ -311,12 +399,12 @@
 
               <div class="product-card">
                  <div class="product-image">
-                     <img src="./image/Chinese Evergreen.png" alt="Chinese Evergreen">
+                     <img src="./image/Chinese_Evergreen-removebg-preview.png" alt="Chinese Evergreen">
                      
                       
                      <div class="product-actions">
                           <button type="button">
-                             <img src="./image/shopping-cart.svg" alt="shopping-cart">
+                             <img src="./image/shopping 1.svg" alt="shopping-cart">
                           </button>
 
                           <button type="button">
@@ -510,7 +598,7 @@
          <div class="footer-logo">
              <span class="logo-icon">
                 <img src="./image/Logo.svg" alt="Logo">
-            </span> 
+            </span>
          </div>
 
          <div class="contact-item">
@@ -527,14 +615,19 @@
               <span class="contact-icon">
                 <img src="./image/Icon2.svg" alt="email">
               </span>
-             <p>contact@greenshop.com</p>
+                <p>
+                  <a href="mailto:contact@greenshop.com">contact@greenshop.com</a> 
+              </p> 
          </div>
 
          <div class="contact-item">
              <span class="contact-icon">
                 <img src="./image/Icon3.svg" alt="tel">
             </span>
-             <p>+88 01911 717 490</p>
+
+             <p>
+                <a href="tel:+8801911717490">+88 01911 717 490</a>
+            </p>
          </div>
      </div>
 
@@ -569,13 +662,19 @@
          <div class="footer-column social-column">
              <h3>Social Media</h3>
 
-             <div class="social-icons">
-                 <a href="#"> <img src="./image/SMFacebook.svg" alt="Facebook"></a>
-                 <a href="#"><img src="./image/SMInstagram.svg" alt="Instagram"></a>
-                 <a href="#"><img src="./image/SMLinkidin.svg" alt="Linkidin"></a>
-                 <a href="#"><img src="./image/SMTwitter.svg" alt="Twitter"></a>
-                 <a href="#"><img src="./image/SMYoutube.svg" alt="Youtube"></a>
+               <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                     <img src="./image/SMFacebook.svg" alt="Facebook"></a>
+                   <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                     <img src="./image/SMInstagram.svg" alt="Instagram"></a>
+                   <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                     <img src="./image/SMLinkidin.svg" alt="LinkedIn"></a>
+                  <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                     <img src="./image/SMTwitter.svg" alt="Twitter"></a>
+                  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                     <img src="./image/SMYoutube.svg" alt="YouTube"></a>
              </div>
+
               <h3 class="payment-title">We accept</h3>
              <div class="payment-methods">
                  <img src="./image/weaceept.svg" alt="weaccept">

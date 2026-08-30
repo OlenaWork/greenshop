@@ -85,32 +85,23 @@ text-transform: uppercase;
    text-align: right;
 }
 
-button{
-    width: 100px;
-    height: 35px;
+
+.login img{
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.shop-btn {
+    width:140px;
+    height:40px;
+    font-size:16px;
+    font-weight:700;
     right: 20%;
     background:#46A358;
     color:white;
     border:none;
     border-radius:6px;
     cursor:pointer;
-
-  
-}
-
-.login img{
-    vertical-align: middle;
-    margin-right: 6px;
-}
-.login{
-    vertical-align: middle;
-}
-
-.shop-btn {
- width:140px;
-    height:40px;
-    font-size:16px;
-    font-weight:700;
 }
 
 .hero-subtitle{
@@ -125,6 +116,43 @@ button{
 .main-title span{
     color:#46A358;
 }
+
+.header-actions {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 150px;
+}
+
+.header-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-right: 18px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.header-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.login {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 6px;
+    background-color: #46A358;
+    color: white;
+}
+
+
+
 /*___________________________________________Start Register______________________________________________*/
 @font-face {
     font-family: "Cera Pro";
@@ -330,12 +358,11 @@ body {
     font-weight: 700;
 }
 
-body {
+.body {
     font-family: "Cera Pro", sans-serif;
 }
 
-
-.shop {
+.shop.container {
     margin-top: 50px;
     font-size: 0;
 }
@@ -344,10 +371,12 @@ body {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    width: 230px;
-    min-height: 900px;
+    width: 270px;
     padding: 14px 18px;
     background-color: #fbfbfb;
+
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 .categories h3 {
@@ -372,12 +401,125 @@ body {
     font-size: 15px;
     text-decoration: none;
 }
+.categories li a {
+    display: inline-block;
+    justify-content: space-between;
+    width: 80%;
+    color: #3D3D3D;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+
+.price-range {
+    margin-top: 35px;
+}
+.price-range h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.range-slider {
+    position: relative;
+
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.range-slider input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    margin: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    pointer-events: none;
+}
+.range-slider input::-webkit-slider-runnable-track {
+    height: 4px;
+    background: #46A358;
+}
+
+.range-slider input::-moz-range-track {
+    height: 4px;
+    background: #46A358;
+}
+.range-slider input::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    margin-top: -7px;
+    border: 3px solid white;
+    border-radius: 50%;
+    background: #46A358;
+    box-shadow: 0 0 0 1px #46A358;
+    pointer-events: auto;
+    cursor: pointer;
+}
+.range-slider input::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border: 3px solid white;
+    border-radius: 50%;
+    background: #46A358;
+    box-shadow: 0 0 0 1px #46A358;
+    pointer-events: auto;
+    cursor: pointer;
+}
+.price-range p {
+    margin: 0 0 15px;
+    font-size: 18px;
+}
+.price-range p span {
+    color: #46A358;
+    font-weight: 600;
+}
+.button-range {
+    width: 120px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    background: #46A358;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+
+.size {
+    margin-top: 35px;
+}
+
+.size h3 {
+    margin-bottom: 20px;
+}
+
+.size ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.size li {
+    margin-bottom: 18px;
+}
+
+.size a {
+    color: #3d3d3d;
+    font-size: 15px;
+    text-decoration: none;
+}
 
 .sale {
     margin: 0 -18px ;
-    margin-top: 500px;
+    margin-top: 140px;
     background-color: #edf7ee;
-    text-align: center;
+    text-align: end;
 }
 
 .sale h2 {
@@ -388,25 +530,26 @@ body {
 }
 
 .sale p {
-    margin: 5px 0 15px;
+    margin: 18px -18px 46px;
     color: #3d3d3d;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 700;
 }
 
 .sale img {
     display: block;
-    width: 95%;
-    margin: 0 auto;
+    width: 85%;
+    margin: -15px auto;
     background-color: transparent;
+    
 }
 
 .products {
     display: inline-block;
     vertical-align: top;
     width: 840px;
-    margin-left: 45px;
-    font-size: 16px;
+    margin-left: 70px;
+    font-size: 40px;
 }
 
 .products-top {
@@ -449,52 +592,11 @@ body {
     color: #3d3d3d;
     font-size: 14px;
 }
-.product-list {
-    font-size: 0;
-}
-
-.product-card {
-    display: inline-block;
-    vertical-align: top;
-    width: 224px;
-    margin-right: 24px;
-    margin-bottom: 45px;
-    font-size: 16px;
-}
-
-.product-card:nth-child(3n) {
-    margin-right: 0;
-}
-
-.product-image {
-    width: 224px;
-    height: 286px;
-    text-align: center;
-}
-
-.product-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
 
 
-.product-card h3 {
-    margin: 10px 0 5px;
-    color: #3d3d3d;
-    font-size: 15px;
-    font-weight: 400;
-}
-
-.product-card p {
-    margin: 0;
-    color: #46a358;
-    font-size: 15px;
-    font-weight: 700;
-}
 
 .pagination {
-    margin-top: 5px;
+    margin-top: 70px;
     padding-bottom: 40px;
     text-align: right;
 }
@@ -521,24 +623,27 @@ body {
     display: flex;
     max-width: 1200px;
     gap: 28px;
-    margin: 60px auto 0;
+    margin: 100px auto 0;
 }
 .promo-card {
     display: flex;
     align-items: center;
     flex: 1;
     min-width: 0;
-    height: 302px;
+    height: 180px;
     background-color: #f5f5f5;
 }
 .promo-card img {
     width: 45%;
-    height: 220px;
+    height: 250px;
     object-fit: contain;
+    position: relative;
+    top: -40px;
 }
 .promo-content {
     flex: 1;
-    text-align: center;
+    text-align: right;
+    padding: 18px 24px;
 }
 
 .promo-content h3 {
@@ -634,33 +739,28 @@ body {
     text-decoration: none;
 }
 
-/*------- HW 9 ------- */
+/*------------------------ HW 9 ---------------------- */
 
 .product-list {
-    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 37px;
+    row-gap: 55px;
 }
 
 .product-card {
-    display: inline-block;
-    vertical-align: top;
     width: 224px;
-    margin-right: 24px;
-    margin-bottom: 45px;
     font-size: 16px;
     position: relative;
-}
-
-.product-card:nth-child(3n) {
-    margin-right: 0;
 }
 
 .product-image {
     width: 224px;
     height: 286px;
     text-align: center;
-
     position: relative;
     overflow: hidden;
+    background-color: #fbfbfb;
 }
 
 .product-image img {
@@ -717,15 +817,28 @@ body {
     height: 20px;
 }
 
-
 .product-card:hover .product-actions {
     opacity: 1;
     visibility: visible;
 }
 
-
 .product-actions button:hover {
-    background-color: #46a358;
+    background-color: #ffffff;
+}
+
+.product-actions button:hover img {
+    filter: invert(51%) sepia(35%) saturate(800%) hue-rotate(80deg);
+}
+
+.product-card:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #46A358;
+    z-index: 10; 
 }
 
 .discount {
@@ -916,7 +1029,7 @@ body {
 .newsletter-form {
     display: flex;
     width: 100%;
-    height: 40px;
+    height: 35px;
     margin-bottom: 18px;
 }
 .newsletter-form input {
@@ -940,6 +1053,7 @@ body {
     font-size: 14px;
     font-weight: 700;
     cursor: pointer;
+    
 }
 .newsletter-form button:hover {
     background-color: #398c49;
@@ -1016,9 +1130,13 @@ body {
     gap: 10px;
     margin-bottom: 25px;
 }
-.social-icons a:hover {
-    background-color: #46a358;
-    color: #ffffff;
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: 0.2s;
+}
+.social-icons a:hover img {
+    filter: brightness(0);
 }
 .payment-title {
     margin-bottom: 12px !important;
