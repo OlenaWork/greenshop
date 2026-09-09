@@ -1167,7 +1167,12 @@ body {
     font-size: 13px;
 }
 
------------------------------------hw13--------------------------------
+.contact-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*-----------------------------------hw13--------------------------------*/
 .checkbox-wrapper {
     margin-top: 15px;
 }
@@ -1230,6 +1235,8 @@ body {
         transform: scale(1);
     }
 }
+
 .checkbox-wrapper input:checked + label .custom-checkbox {
     animation: checkbox-animation 0.25s ease;
 }
+/*------------------------------hw14---------------------------*/
